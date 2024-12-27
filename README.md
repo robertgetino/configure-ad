@@ -26,8 +26,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Step 1: Install Active Directory in Windows Server VM
 - Step 2: Create a Domain Admin user within Active Directory
-- Step 3: Attach Normal Account to Domain
-- Step 4: Create Users with PowerShell and Setup Remote Desktop
+- Step 3: Create Users with PowerShell and Setup Remote Desktop
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -44,7 +43,7 @@ In Step 1, I log into Microsoft Azure and create a virtual machine and name it d
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Step 2, I went to the Active Directory Users and Computers, or ADUC, and created an OU (Organizational Unit) and named it "_EMPLOYEES". Next, I created another OU called "_ADMINS". Going back to the "_EMPLOYEES" OU, I created an employee name, "John Doe".
+In Step 2, I went to the Active Directory Users and Computers, or ADUC, and created an OU (Organizational Unit) and named it "_EMPLOYEES". Next, I created another OU called "_ADMINS". Going back to the "_EMPLOYEES" OU, I created an employee name. In this project, it is "John Doe".
 </p>
 <br />
 
@@ -52,12 +51,6 @@ In Step 2, I went to the Active Directory Users and Computers, or ADUC, and crea
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Step 3, I set up Remote Desktop and allow "all domain users" access to remote desktop. Next, I open PowerShell as an administrator and create a new file. In this file, I paste the contents of the script into it. Thirdly, I run the script and observe the accounts being created. Finally, I open ADUC (Active Directory Users and Computers) and observe the accounts in the proper OU (Organizational Unit).
 </p>
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
