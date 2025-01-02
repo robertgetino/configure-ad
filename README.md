@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="[image](https://github.com/user-attachments/assets/58b49cf8-9595-4241-b3d4-22ea327d8a6d)
+<img src="[image alt]([https://github.com/user-attachments/assets/58b49cf8-9595-4241-b3d4-22ea327d8a6d](https://github.com/robertgetino/configure-ad/blob/5f3e4c7874f5cd3fd6a76ab36cde79f22a5c2918/Deploying%20Active%20Directory.png)
 " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
