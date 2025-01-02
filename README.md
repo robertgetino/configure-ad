@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/robertgetino/configure-ad/blob/0b22f49342d191f76ef4b6bf99fe2dc9aee56cd1/Deploying%20Active%20Directory.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Step 1, I log into Microsoft Azure and create a virtual machine and name it dc-1, in this project. Next I log into the VM and install Active Directory Services and follow the respective prompts and allow permissions when necessary. Finally, as shown in the screenshot above, I promote to a domain controller by adding a forest and naming it as "mydomain.com", and restart the VM. I'll log in as the user "my-domain.com".
