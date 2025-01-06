@@ -47,7 +47,7 @@ In Step 2, I went to the Active Directory Users and Computers, or ADUC, and crea
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/robertgetino/configure-ad/blob/79be43d12a9e7049ecbd2f8b50ac4513e9858df0/PowerShell.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Step 3, I set up Remote Desktop and allow "all domain users" access to remote desktop. Next, I open PowerShell as an administrator and create a new file. In this file, I paste the contents of the script into it. Thirdly, I run the script and observe the accounts being created. Finally, I open ADUC (Active Directory Users and Computers) and observe the accounts in the proper OU (Organizational Unit).
