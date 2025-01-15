@@ -38,7 +38,7 @@ I create a new resource group (Active-Directory-Labs) and virtual network in Mic
 <img src="https://github.com/robertgetino/configure-ad/blob/c892cae143c055992b3385f46dc684b15132b5e0/pingdc1.png" height="45%" width="45%" alt="Disk Sanitization Steps"/> <img src="https://github.com/robertgetino/configure-ad/blob/a6e26e973bd38094fd7c1be1384c2920930851f1/ipconfig%20%3Aall.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://github.com/robertgetino/configure-ad/blob/fff72b833113b7e3cebfd91649f3878397bf13b7/promote%20as%20dc.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://github.com/robertgetino/configure-ad/blob/55a1baf0e0aaf017debd00f87019a87c8e869621/admin%20ou.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I then log into client-1 and attempt to ping dc-1's IP address, to which I succeed. As another test, I run the command "ipconfig /all" to view the DNS settings of dc-1. Next, I log into dc-1 and install Active Directory Domain Services and promote it as a DC (domain controller). I setup a new forest and name it mydomain.com, then restart dc-1 and login as the new forest I just created. I then go to the folder, Active Directory Users and Computers (ADUC), create two Organizational Units (OU) "_EMPLOYEES" and "ADMINS".
+I then log into client-1 and attempt to ping dc-1's IP address, to which I succeed. As another test, I run the command "ipconfig /all" to view the DNS settings of dc-1. Next, I log into dc-1 and install Active Directory Domain Services and promote it as a DC (domain controller). I setup a new forest and name it mydomain.com, then restart dc-1 and login as the new forest I just created. I then go to the folder, Active Directory Users and Computers (ADUC), create two Organizational Units (OU) "_EMPLOYEES" and "_ADMINS". I create a user in the "_ADMINS" OU named John Smith and make them an admin.
 </p>
 <br />
 
@@ -46,6 +46,6 @@ I then log into client-1 and attempt to ping dc-1's IP address, to which I succe
 <img src="https://github.com/robertgetino/configure-ad/blob/79be43d12a9e7049ecbd2f8b50ac4513e9858df0/PowerShell.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Step 3, I set up Remote Desktop and allow "all domain users" access to remote desktop. Next, I open PowerShell as an administrator and create a new file. In this file, I paste the contents of the script into it. Thirdly, I run the script and observe the accounts being created. Finally, I open ADUC (Active Directory Users and Computers) and observe the accounts in the proper OU (Organizational Unit).
+I'll then log into client-1 again and join it to the domain, then create another OU named "_CLIENTS" and drag client-1 to there. Back into client-1, I go into Remote Desktop and allow all users access to remote desktop, which allows any users access to the domain to log in remotely. Finally, I log back into dc-1 and open PowerShell_ise as an administrator and create a new file and paste a premade script into it. This will allow me to randomly generate employee accounts in the ADUC OU (_EMPLOYEES). As a test, I log into client-1 with one of the employee names and it works as intended.
 </p>
 <br />
