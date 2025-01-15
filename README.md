@@ -5,17 +5,13 @@
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com/watch?v=wuIE4p4io7Q)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- PowerShell_ise
 
 <h2>Operating Systems Used </h2>
 
@@ -31,10 +27,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://github.com/robertgetino/configure-ad/blob/0b22f49342d191f76ef4b6bf99fe2dc9aee56cd1/Deploying%20Active%20Directory.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Step 1, I log into Microsoft Azure and create a virtual machine and name it dc-1, in this project. Next I log into the VM and install Active Directory Services and follow the respective prompts and allow permissions when necessary. Finally, as shown in the screenshot above, I promote to a domain controller by adding a forest and naming it as "mydomain.com", and restart the VM. I'll log in as the user "my-domain.com".
+I create a new resource group (Active-Directory-Labs) and virtual network in Microsoft Azure. I then create two new virtual machines within them and make sure they're all on the same subnet. The first virtual machine is running the Windows Server 2020 OS, which is the domain controller (dc-1) and I set the IP address to static instead of dynamic. The second virtual machine is running Windows 10 OS (client-1) and I also set the IP address to static. I attach it to the same virtual network as dc-1 and restart client-1. I then log into client-1 and attempt to ping dc-1's IP address, to which I succeed. As another test, I run the command "ipconfig /all" to view the DNS settings of dc-1.
 </p>
 <br />
 
