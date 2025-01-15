@@ -27,7 +27,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/robertgetino/configure-ad/blob/b45fb1bdf3aa1dc3bddc2eef22617151279151ed/resourcegroup.png" height="45%" width="45%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 I create a new resource group (Active-Directory-Labs) and virtual network in Microsoft Azure. I then create two new virtual machines within them and make sure they're all on the same subnet. The first virtual machine is running the Windows Server 2020 OS, which is the domain controller (dc-1) and I set the IP address to static instead of dynamic. The second virtual machine is running Windows 10 OS (client-1) and I also set the IP address to static. I attach it to the same virtual network as dc-1 and restart client-1. I then log into client-1 and attempt to ping dc-1's IP address, to which I succeed. As another test, I run the command "ipconfig /all" to view the DNS settings of dc-1.
