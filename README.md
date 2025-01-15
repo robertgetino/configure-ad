@@ -43,7 +43,7 @@ I then log into client-1 and attempt to ping dc-1's IP address, to which I succe
 <br />
 
 <p>
-<img src="https://github.com/robertgetino/configure-ad/blob/79be43d12a9e7049ecbd2f8b50ac4513e9858df0/PowerShell.png" height="80%" width="80%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/robertgetino/configure-ad/blob/603a03a042538c378b63353c3036586eb9f2d097/client1%20join%20domain.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 I'll then log into client-1 again and join it to the domain, then create another OU named "_CLIENTS" and drag client-1 to there. Back into client-1, I go into Remote Desktop and allow all users access to remote desktop, which allows any users access to the domain to log in remotely. Finally, I log back into dc-1 and open PowerShell_ise as an administrator and create a new file and paste a premade script into it. This will allow me to randomly generate employee accounts in the ADUC OU (_EMPLOYEES). As a test, I log into client-1 with one of the employee names and it works as intended.
