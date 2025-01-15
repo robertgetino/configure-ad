@@ -35,7 +35,7 @@ I create a new resource group (Active-Directory-Labs) and virtual network in Mic
 <br />
 
 <p>
-<img src="https://github.com/robertgetino/configure-ad/blob/c892cae143c055992b3385f46dc684b15132b5e0/pingdc1.png" height="45%" width="45%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/robertgetino/configure-ad/blob/c892cae143c055992b3385f46dc684b15132b5e0/pingdc1.png" height="45%" width="45%" alt="Disk Sanitization Steps"/> <img src="https://github.com/robertgetino/configure-ad/blob/a6e26e973bd38094fd7c1be1384c2920930851f1/ipconfig%20%3Aall.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"> <img src="https://i.imgur.com/DJmEXEB.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 I then log into client-1 and attempt to ping dc-1's IP address, to which I succeed. As another test, I run the command "ipconfig /all" to view the DNS settings of dc-1.
